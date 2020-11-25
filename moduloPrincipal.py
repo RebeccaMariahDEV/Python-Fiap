@@ -8,7 +8,7 @@ Aqui vamos usar duas coisas novas o from e o import:
 # Se usar * ele vai chamar todas as funções do script que chamamos
 
 """
-from PythonPackage_funcao.identificadorFuncoes import *
+from .PythonPackage_funcao.identificadorFuncoes import *
 
 
 minhaLista = []
