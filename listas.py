@@ -66,8 +66,9 @@ for equipamento in equipamentos:
 """
 Porem aqui ainda não esta do melhor jeito, vamos refatorar o código, com uma mudança, vamos colocar e chamar tudo por indice
 
-Indice são as posições de cada cado ou elemento dentro de uma lista, mas pode ser usado em outros exemplos tambem.
-como o indece de uma string, ou numero, valor ect.
+Indice são as posições de cada dado ou elemento dentro de uma lista, mas pode ser usado em outros exemplos tambem.
+como o indece de uma string, ou numero, valor ect; o indice sempre começa em 0, quando não sabemos qual o indice do ultimo
+valor podemos acessar através de -1, assim retorna o ultimo valor
 
 """
 

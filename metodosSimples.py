@@ -266,7 +266,17 @@ Temos dois tipos de loops:
 * AVISO:
   mas cuidado para não criar um loop infinitos com ele, ele vai acaabar com a memoria da sua maquina e travar o sistema
 
+For cria uma variavel instantanea para receber o valor de cada volta, o indice assim como as voltas sempre começam em 0,
+e termina em um numero a menos do que pensamos, já que começa em 0
+
+range() ele é para criar e percorrer instanteneo numeros
+
 """
+
+# usando for
+
+for numero in range(0, 100):
+    print(numero)
 
 # usando while
 
