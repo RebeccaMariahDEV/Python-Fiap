@@ -36,7 +36,8 @@ print(usuarios)
 """
 Prontinho, criamos mais um usuario
 Porem ainda na mão, mas se não souber como criar assim, não adianta saber mais alem, assim como listas podemos remover
-algo, ou só um valor; podemos pegar um usuario específico tambem usando o .get() dentro a chave do usuario que quer
+algo, ou só um valor; podemos pegar um usuario específico tambem usando o .get() dentro a chave do usuario que quer, porem
+se passarmos uma chave que não existe ele nos retornará None, palavra reservada em python para não existe ou é algo vazio
 
 """
 # Pegando um usuario
@@ -99,4 +100,10 @@ tupla em 4 componentes para cada usuario
 
 ESta confuso, vou procurar melhorar
 
+Porem tem uma curriosidade, se tentarmos atribuir um valor para uma variavel já inicializada, assim que um novo valor for
+atribuido essa variavel vai ser sobrescrita, o mesmo vai acontecer em um dicionario, se tentarmos usar uma chave já usada
+e passar novos atributos para ela, ele não vai salvar como se as duas fossem diferentes, ele vai sobrescrever, por isso
+devemos tomar o maior cuidado para não acontecer isso.
+
 """
+
