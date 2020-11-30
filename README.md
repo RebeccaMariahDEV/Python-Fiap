@@ -21,4 +21,4 @@ Vamos lá:
 - dicionario2.py
 - tuplas.py
 
-Em breve terá mais.
+Em breve.
