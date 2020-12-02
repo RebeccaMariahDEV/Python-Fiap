@@ -4,11 +4,10 @@ Em python é nome = o dado que quer
 
 Tipos de dados:
 
-- int (numeros inteiros)
+- int (números inteiros)
 - str (string são dados entre aspas simples ou duplas
-- float (numeros com casa decimal)
-Esses são os tipos basícos em qualquer lugar
-
+- float (números com casa decimal)
+Esses são os tipos básicos em qualquer lugar
 """
 
 # Variaveis com atribuição de dados simples
@@ -23,11 +22,10 @@ print("Possui: ", qtde_funcionarios, " funcionarios.")
 print("A média da mensalidade é de: " + str(mediaMensalidade))
 
 """
-Input() metodo interno do python para pedir um dado ao usuario, esse input é atribuido a uma variavel sempre
+Input() método interno do python para pedir um dado ao usuario, esse input é atribuído a uma variavel sempre
 
 Na hora do printe podemos converter um dado para str, mas não é algo muito utilizado, tem outros meios de imprimir 
-a variavel junto a str, porem tem outros meios para isso tambem
-
+a variavel junto a str, porem tem outros meios para isso também
 """
 # Dados atraves de inputs
 
@@ -40,10 +38,8 @@ print(nome + " trabalha na empresa " + empresa)
 print("Possui: ", qtde_funcionarios, " funcionarios.")
 print("A média da mensalidade é de: " + str(mediaMensalidade))
 
-"""
-Quando não sabemos exatamente que tipo de dado é o que temos usamos o type() para nos ajudar nessa missão
-"""
-# Type, mostra o tipo de dado que esta usando, ou o que é um dado x
+#Quando não sabemos exatamente que tipo de dado é o que temos usamos o type() para nos ajudar nessa missão
+# Type, mostra o tipo de dado que está usando, ou o que é um dado x
 
 nome = input("Digite um funcionário: ")
 empresa = input("Digite a instituição: ")
@@ -60,12 +56,10 @@ print("O tipo de dado da variavel [qtde_funcionarios] é: ", type(qtde_funcionar
 print("O tipo de dado da variavel [mediaMensalidade] é: ", type(mediaMensalidade))
 
 """
-IF é uma pergunta literamente, ex: se uma maça for igual a uma maça faça um suco
-Ele tambem pode ser composto de outras varias decições ex: se fruta for igual a maça como, 
+IF é uma pergunta literalmente, ex: se uma maça for igual a uma maça faça um suco
+Ele também pode ser composto de outras várias decisões ex: se fruta for igual a maça como, 
 e se fruta for igual a melancia faça suco, se não (não é fruta) não coma
-
 """
-
 # IF condicional simples, usado para tomada de decisões diferentes
 
 nome = input("Digite o nome: ")
@@ -76,7 +70,7 @@ if idade >= 65:
     prioridade = "SIM"
 print("O paciente " + nome + " possui atendimento prioritário? " + prioridade)
 
-# composta, o else não é obrigatorio porem fica explicito o que quer dizer no código
+# composta, o else não é obrigatório porem fica explicito o que quer dizer no código
 
 nome = input("Digite o nome: ")
 idade = int(input("Digite a idade: "))
@@ -87,7 +81,7 @@ else:
     print("O paciente " + nome + " NÃO possui atendimento prioritário!")
 
 """
-Não utilizar assim, sempre melhor criar ações compostas
+# Não utilizar assim, sempre melhor criar ações compostas
 
 nome=input("Digite o nome: ")
 idade=int(input("Digite a idade: "))
@@ -113,9 +107,7 @@ O que é Falso em booleano:
 - str vazia
 - int com o valor 0
 - float 0.0
-
 """
-
 # Verdade ou Falso com condicionais
 
 nome = input("Digite o nome: ")
@@ -140,10 +132,8 @@ ex: se banana = fruta e(and) banana = fruta faça isso
     se banana = fruta ou(or) banana = gato, ele vai ver, um ou o outro tem que ser verdadeiro
     retorna um verdadeiro e ai vai entrar no if/elif
     
-    Falso ele não entra e vai para o proximo if/ elif/ else
-    
+    Falso ele não entra e vai para o próximo if/ elif/ else 
 """
-
 # utilizando AND ou OR
 
 nome = input("Digite o nome: ")
@@ -219,9 +209,7 @@ else:
     else:
         print("Paciente SEM prioridade")
 
-"""
-Podemos usar dentro de um if um input, pois caso a decisão seja x ele executa algo certo? até uma pergunta nova
-"""
+# Podemos usar dentro de um if um input, pois caso a decisão seja x ele executa algo certo? até uma pergunta nova
 
 # Exemplo de decições com if e input dentro dele
 
@@ -264,13 +252,12 @@ Temos dois tipos de loops:
     ele vai rodar enquanto a condição for verdadeira, se tornou falsa ele para
     
 * AVISO:
-  mas cuidado para não criar um loop infinitos com ele, ele vai acaabar com a memoria da sua maquina e travar o sistema
+  mas cuidado para não criar um loop infinitos com ele, ele vai acabar com a memória da sua máquina e travar o sistema
 
-For cria uma variavel instantanea para receber o valor de cada volta, o indice assim como as voltas sempre começam em 0,
+For cria uma variavel instantânea para receber o valor de cada volta, o indice assim como as voltas sempre começam em 0,
 e termina em um numero a menos do que pensamos, já que começa em 0
 
-range() ele é para criar e percorrer instanteneo numeros
-
+range() ele é para criar e percorrer instantâneo números
 """
 
 # usando for
