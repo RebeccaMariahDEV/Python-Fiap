@@ -4,7 +4,6 @@ anteriores, usaremos ela no futuro.
 
 Não falei de um arquivo que temos dentro do nosso pacote, ele é o __init__.py, bem basicamente é nele que fica as
 Funções para uso interno do python, mas não precisamos dele ainda
-
 """
 
 # Funções para completar cada bloco que queremos criar, algo parecido oa que já usamos em listas
@@ -37,8 +36,8 @@ def depreciarPorNome(lista, porc):
             print("Novo valor: ", elemento[1])
 
 
-# repare como esta escrito cada bloco de funções, umas tem print outra não, elas seguem o que disse a cima.
-# A função depreciarPorNome recebe dois parametros, podem receber N parametros obrigatorios ou não
+# repare como está escrito cada bloco de funções, umas tem print outra não, elas seguem o que disse acima.
+# A função depreciarPorNome recebe dois parâmetros, podem receber N parâmetros obrigatórios ou não
 
 def excluirPorSerial(lista):
     serial = int(input("\nDigite o serial do equipamento que será excluido: "))
