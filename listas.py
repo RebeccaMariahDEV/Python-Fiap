@@ -1,9 +1,8 @@
 """
 Listas são delimitadas em [], em python isso é muito importante, pois temos outros tipos
-dentro dela podemos colocar varios dados
+dentro dela podemos colocar vários dados
 
-Todas as listas podem ser inicializadas vazia ou com dados, e em uma lista pode ter varios tipos de dados
-
+Todas as listas podem ser inicializadas vazia ou com dados, e em uma lista pode ter vários tipos de dados
 """
 
 # lista preenchida estaticamente
@@ -28,7 +27,7 @@ while resposta == "S":
     inventario.append(input("Departamento: "))
     resposta = input("Digite \"S\" para continuar: ").upper()
 
-# .append() é um metodo para adicionar algo em uma lista, podemos usar esse exemplo para criar uma lista básica de coisas
+# .append() é um método para adicionar algo em uma lista, podemos usar esse exemplo para criar uma lista básica de coisas
 
 # Usando um FOR para imprimir o que tem dentro da nossa lista inventario
 
@@ -45,7 +44,7 @@ while resposta == "S":
 for elemento in inventario:
     print(elemento)
 
-# Podemos criar uma lista para cada item, e adicionarmos varias coisas dentro tambem
+# Podemos criar uma lista para cada item, e adicionarmos várias coisas dentro também
 
 equipamentos = []
 valores = []
@@ -64,12 +63,11 @@ for equipamento in equipamentos:
     print("Equipamento: ", equipamento)
 
 """
-Porem aqui ainda não esta do melhor jeito, vamos refatorar o código, com uma mudança, vamos colocar e chamar tudo por indice
+Porem aqui ainda não está do melhor jeito, vamos refatorar o código, com uma mudança, vamos colocar e chamar tudo por indice
 
-Indice são as posições de cada dado ou elemento dentro de uma lista, mas pode ser usado em outros exemplos tambem.
-como o indece de uma string, ou numero, valor ect; o indice sempre começa em 0, quando não sabemos qual o indice do ultimo
-valor podemos acessar através de -1, assim retorna o ultimo valor
-
+Indice são as posições de cada dado ou elemento dentro de uma lista, mas pode ser usado em outros exemplos também.
+como o índice de uma string, ou número, valor etc; o indice sempre começa em 0, quando não sabemos qual o indice do último
+valor podemos acessar através de -1, assim retorna o último valor
 """
 
 # Lista com indece:
@@ -95,14 +93,13 @@ for indice in range(0, len(equipamentos)):
     print("Departamento.: ", departamentos[indice])
 
 """
-Já se torna um metodo melhor, mais legivel e organizado, lembrando que é fundamental ter codigo limpo, isso é boas praticas 
+Já se torna um método melhor, mais legível e organizado, lembrando que é fundamental ter código limpo, isso é boas praticas
 
-len() função interna do python para contar o numero de indices, caracteres e outros dados, pode ser dentro de uma lista
+len() função interna do python para contar o número de índices, caracteres e outros dados, pode ser dentro de uma lista
 ou em outros tipos
-
 """
 
-# Exemplo de buscas com listas, ainda usando o exemplo acima com a junção do exemplo a baixo
+# Exemplo de buscas com listas, ainda usando o exemplo acima com a junção do exemplo abaixo
 
 busca = input("\nDigite o nome do equipamento que deseja buscar: ")
 
@@ -112,21 +109,20 @@ for indice in range(0, len(equipamentos)):
         print("Valor..: ", valores[indice])
         print("Serial.:", seriais[indice])
 
-# isso ira gerar uma busca a partir da lista do nome do equipamento
-
+# isso irá gerar uma busca a partir da lista do nome do equipamento
 # Desafio de listas
 
 '''
 Situação 1: 
-todos os equipamentos "Impressora" terar um desconto de 10% depois de determinado periodo.
-Monte um codigo que sera responsavel por dar esse desconto e alterar todos os valores de "impressora"
+todos os equipamentos "Impressora" tirar um desconto de 10% depois de determinado período.
+Monte um código que será responsável por dar esse desconto e alterar todos os valores de "impressora"
 
 Situação 2:
-Um equipamento com determinado numero serial foi danificado e sera descartado.
+Um equipamento com determinado número serial foi danificado e será descartado.
 Precisamos eliminar esse equipamento . DICA: para eliminar um item de uma lista podemos usar o comando "del"
 Exemplo: del lista[<indice>]
-
 '''
+
 # Exemplo situação 1:
 
 depreciacao = input("Digite o nome do equipamento que será depreciado:\n ")
@@ -138,8 +134,7 @@ for indice in range(0, len(equipamentos)):
         valores[indice] = valores[indice] * 0.9
         print("Novo valor: ", valores[indice])
 
-# Não existe metodo exato para resolver algo, se conseguir resolver esta certo!
-
+# Não existe método exato para resolver algo, se conseguir resolver está certo!
 # Exemplo situação 2:
 
 serial = int(input("\nDigite o serial do equipamento que será excluido: "))
@@ -161,10 +156,10 @@ for indice in range(0, len(equipamentos)):
     print("Departamento.: ", departamentos[indice])
 
 """
-Aqui usamos um break, ele serve para parar uma algo, no caso o nosso FOR pois no final queremos sair do if e gerar algo novo
+Aqui usamos um break, ele serve para parar uma algo, no caso o nosso FOR pois no final queremos sair do if e gerar 
+algo novo.
 
-existe outros meios de remover ou deletar algo de uma lista, na duvida pesquise ou veja a documentação do Python
-
+existe outros meios de remover ou deletar algo de uma lista, na dúvida pesquise ou veja a documentação do Python.
 """
 
 # Listas dentro de listas, assim como if's podemos usar listas encadeadas
@@ -217,18 +212,17 @@ for elemento in inventario:
     print("Departamento.: ", elemento[3])
 
 '''
-A cada vez que passa vemos que podemos usar tudo que aprendemos aqui, um codigo por um todo é assim tambem,
+A cada vez que passa vemos que podemos usar tudo que aprendemos aqui, um código por um todo é assim também,
 Aqui estamos criando uma lista dentro de outra para organizar, mais no futuro veremos um outro exemplo de fazer isso de 
-modo mmais claro e melhor, antes temos que entender como criar e manipular dados em lista
+modo mais claro e melhor, antes temos que entender como criar e manipular dados em lista
 
-A cima usamos mais um metodo do python:
-.remove() é para remover/ deletar algo de uma lista, sendo tambem usado em outros modos, dentro dos parentes é onde passaremos
-exatamente o que queremos remover
+A cima usamos mais um método do python:
+.remove() é para remover/ deletar algo de uma lista, sendo também usado em outros modos, dentro dos parentes é onde 
+passaremos exatamente o que queremos remover.
 
-Usar listas dentro de listas pode parecer assustador, mas isso evita erros e evita que mostre um dado errado, tambem em 
+Usar listas dentro de listas pode parecer assustador, mas isso evita erros e evita que mostre um dado errado, também em 
 determinadas situações será muito importante o uso de listas assim, já que toda aplicação que criamos tem que ser a mais
-segura e exata possivel, sempre tentando prever os possiveis erros do usuario para não bugar seu codigo
-
+segura e exata possível, sempre tentando prever os possíveis erros do usuario para não bugar seu código
 '''
 
 # Funções para lista numericas
@@ -248,11 +242,10 @@ Aqui usamos 3 coisas novas que os nomes já explica o que é:
 
 Max() retorna o maior valor
 Min() retorna o menor valor
-sum() soma os valores, porem lembrando que ela só pode ser usada em numeros
+sum() soma os valores, porem lembrando que ela só pode ser usada em números
 
 Max e Min pode ser usado em praticamente qualquer dado 
 
-Existe varios metodos que podemos usar, porem para saber você pode usar um dir direto em um terminal python ex:
-dir(list), ele retornara todos os metodos para usar em listas
-
+Existe vários métodos que podemos usar, porem para saber você pode usar um dir direto em um terminal python ex:
+dir(list), ele retornara todos os métodos para usar em listas
 """
