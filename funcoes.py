@@ -4,7 +4,6 @@ Até agora já usamos varias funções, são funções internas como : int, str,
 no PVM do python (Python Virtual Machine)
 
 Em um código que já vimos vamos indentificar onde poderiamos criar funções:
-
 """
 # identificando funções
 
@@ -74,20 +73,18 @@ if len(valores) > 0:
 
 """
 Para criarmos uma função precisamos usar um comando def nomeFuncao():, esse é o modo de criar, lembra tudo que 
-sabemos usar até aqui podemos usar dentro de uma função, ela é justamente para deixar seu código mais legivel e organizavel,
-é mais facil ler um livro todo, sem o titulo para cada capítulo ou separado por capítulos?
+sabemos usar até aqui podemos usar dentro de uma função, ela é justamente para deixar seu código mais legível e 
+organizável, é mais fácil ler um livro todo, sem o título para cada capítulo ou separado por capítulos?
 
-Uma função pode ou não ter parametros, parametros são dados que ela vai precisar receber para funcionar corretamente,
-se precisamos calcular um salario para aumento por exemplo, temos que saber o salario atual né, então a função vai receber
-esse salario como parametro.
+Uma função pode ou não ter parâmetros, parâmetros são dados que ela vai precisar receber para funcionar corretamente,
+se precisamos calcular um salário para aumento por exemplo, temos que saber o salário atual né, então a função vai 
+receber esse salário como parametro.
 
 Ao fim de uma função ele pode retornar algo ou não, isso vai do programa, para retornar algo usamos a palavra return,
 porem dependendo você pode usar um print normal.
 
 Para executar a função temos que chamar ela em algum lugar, se não ela nunca vai funcionar.
-
 """
-
 
 # Funções para completar cada bloco que queremos criar, algo parecido oa que já usamos em listas
 
@@ -119,8 +116,8 @@ def depreciarPorNome(lista, porc):
             print("Novo valor: ", elemento[1])
 
 
-# repare como esta escrito cada bloco de funções, umas tem print outra não, elas seguem o que disse a cima.
-# A função depreciarPorNome recebe dois parametros, podem receber N parametros obrigatorios ou não
+# repare como está escrito cada bloco de funções, umas tem print outra não, elas seguem o que disse acima.
+# A função depreciarPorNome recebe dois parâmetros, podem receber N parâmetros obrigatórios ou não
 
 def excluirPorSerial(lista):
     serial = int(input("\nDigite o serial do equipamento que será excluido: "))
