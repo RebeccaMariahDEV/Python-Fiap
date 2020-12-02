@@ -36,14 +36,13 @@ resumirValores(minhaLista)
 """
 Ficou um pouco confuso o modo como importei e como chamei né?! Mas ok vamos explicar
 
-Em Python usamos algo.algo para chamar exatamente de onde queremos as funções pre criadas, porem tem outros meios de usar
+Em Python usamos algo.algo para chamar exatamente de onde queremos as funções pré criadas, porem tem outros meios de usar
 ex: from PythonPackage_funcao import identificadorFuncoes, porem aqui deveremos usar 
 identificadorFuncoes.oNomeDaFunçãoQueQueremos, assim usaremos uma função específica, já o * você usa o nome da função direto
 
-Fica mais facil para ler não é mesmo?
+Fica mais fácil para ler não é mesmo?
 
-O que devemos pensar é, se o nosso codigo esta muito extenso sera que não podemos criar um pacote e usar as funções em 
+O que devemos pensar é, se o nosso código está muito extenso será que não podemos criar um pacote e usar as funções em 
 outro lugar?, isso facilitara a manutenção do código sem falar nas mudanças do código para inovar algo, e principalmente
-a reutilização de códigos; podemos dividir tambem em classes, mas isso vai ficar um pouco mais para frente. 
-
+a reutilização de códigos; podemos dividir também em classes, mas isso vai ficar um pouco mais para frente. 
 """
