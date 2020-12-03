@@ -20,5 +20,19 @@ Vamos lá:
 - dicionarios.py
 - dicionario2.py
 - tuplas.py
+- lendoArquivo.py
+- teste.txt (apenas para ter por exemplo ai com você)
+- teste2.txt (apenas para ter por exemplo ai com você)
+- inventario.py
+- funcoesInventario.py
+- recuperandoDados.py
+- arquivoDeTerceiros.py
+- JSON.py
+- funcoesJSON.py
+- manipularJSON.py
+- inventario_json.json (apenas para ter por exemplo ai com você)
 
 Em breve.
+
+Poderia dividir tudo em pastas por tópicos, mas quis deixar o máximo de informações no mesmo script.
+Bom aproveito :D
